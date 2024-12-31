@@ -14,7 +14,7 @@ lst_all = lst50 + lst100
 for i in lst_all:
     rank = i.select_one('.rank').text
     title = i.select_one('.ellipsis.rank01 span a').text
-    singer = i.select_one('.ellipsis.rank02 span a').text
+    singer = i.select_one('.ellipsis.rank02 a').text
     album = i.select_one('.ellipsis.rank03 a').text
     print(f"순위 : {rank}")
     print(f"제목 : {title}")
